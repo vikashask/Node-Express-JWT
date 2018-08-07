@@ -24,6 +24,7 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 // routes 
+const welcome = require('./routes/welcome');
 
 app.get('/setup', welcome.setup);
 app.get('/', welcome.welcome);
