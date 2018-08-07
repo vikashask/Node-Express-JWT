@@ -1,5 +1,5 @@
 {
-  "name": "node expess jwr",
+  "name": "Node-Express-JWT",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.15.0",
