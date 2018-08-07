@@ -1,5 +1,5 @@
 {
-  "name": "node-token-authentication",
+  "name": "node expess jwr",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.15.0",
