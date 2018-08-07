@@ -19,7 +19,7 @@ function setup (req, res) {
 }
 
 function welcome (req, res) {
-    res.send(`server is running at http://localhost: ${ config.port }/api`);
+    res.send(`Server is running at http://localhost: ${ config.port }`);
 }
 
 module.exports = {setup,welcome}
