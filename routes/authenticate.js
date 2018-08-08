@@ -26,23 +26,26 @@ function authenticate(req, res) {
                     success: false,
                     message: 'Authentication failed. Wrong password.'
                 });
-            } else if(req.body.password && req.body.name){
+            } else if (req.body.password && req.body.name) {
 
                 // if user is found and password is right
                 // create a token
                 var payload = {
-                    admin: user.admin
+                    admin: user.admin,
+                    user: user.password
                 }
                 var token = jwt.sign(payload, config.secret, {
+                    algorithm: 'HS256',
                     expiresIn: 86400 // expires in 24 hours
                 });
+                console.log(token, '--------token---------------');
 
                 res.json({
                     success: true,
                     message: 'Got token!',
                     token: token
                 });
-            }else{
+            } else {
                 res.json({
                     success: false,
                     message: 'User name and password not found',
