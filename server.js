@@ -30,11 +30,13 @@ const auth = require('./routes/authenticate');
 app.get('/setup', welcome.setup);
 app.get('/', welcome.welcome);
 
-app.post('/authenticate', auth.authenticate);
+// instance of the router for api routes
+var routesApi = express.Router();
 
+routesApi.post('/authenticate', auth.authenticate);
 
 // route middleware to authenticate and check token
-app.use(function (req, res, next) {
+routesApi.use(function (req, res, next) {
 
 	// check header or url parameters or post parameters for token
 	var token = req.body.token || req.param('token') || req.headers['x-access-token'];
@@ -67,6 +69,7 @@ app.use(function (req, res, next) {
 
 });
 
+app.use('/api',routesApi);
 // start the server 
 app.listen(port);
 console.log('Server started http://localhost:' + port);
