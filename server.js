@@ -79,6 +79,9 @@ routesApi.get('/', function (req, res) {
 
 routesApi.get('/users',userRoute.getAllUsers);
 
+routesApi.get('/checkToken', function (req, res) {
+	res.json(req.decoded);
+});
 
 app.use('/api',routesApi);
 // start the server 
