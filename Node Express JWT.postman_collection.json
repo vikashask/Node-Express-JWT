@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "7ee941f4-d46e-4bd7-a2db-e9fd2a8f3ca3",
+		"name": "Node Express JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "7e5147ec-9953-4c4e-a52a-65648c0e784c",
+			"name": "http://localhost:3001/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "name",
+						"value": "vikask"
+					},
+					{
+						"key": "password",
+						"value": "password"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001/api/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"authenticate"
+					]
+				},
+				"description": "authenticate"
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "04cdc9fc-47f5-43ee-9146-cd2ce0ec1e55",
+			"name": "http://localhost:3001/users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MzM3MTM1NjcsImV4cCI6MTUzMzc5OTk2N30.BunuYgnptF6Sy31EC8AxAJ4Gz_mIllJpkHrBJcYnNHE"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "6c6758b0-e562-42ef-bd3e-793fcb918dbd",
+			"name": "http://localhost:3001/api/checkToken",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MzM3MTM1NjcsImV4cCI6MTUzMzc5OTk2N30.BunuYgnptF6Sy31EC8AxAJ4Gz_mIllJpkHrBJcYnNHE"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001/api/checkToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"checkToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "c4547065-07c5-435f-ab4d-e07dceba7497",
+			"name": "http://localhost:3001/api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MzM3MTM1NjcsImV4cCI6MTUzMzc5OTk2N30.BunuYgnptF6Sy31EC8AxAJ4Gz_mIllJpkHrBJcYnNHE"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
