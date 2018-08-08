@@ -69,6 +69,13 @@ routesApi.use(function (req, res, next) {
 
 });
 
+// auth routes
+routesApi.get('/', function (req, res) {
+	res.json({
+		message: 'Welcome to Api route'
+	});
+});
+
 app.use('/api',routesApi);
 // start the server 
 app.listen(port);
