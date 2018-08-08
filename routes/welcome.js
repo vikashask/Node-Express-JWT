@@ -1,13 +1,15 @@
+var User = require('../app/models/user'); // get our mongoose model
 let config = require('../config');
 
-function setup (req, res) {
+function register (req, res) {
 
     // create a sample user
     var record = new User({
-        name: 'vikask',
-        password: '12345678',
+        name: req.body.name,
+        password: req.body.password,
         admin: true
     });
+    
     record.save(function (err) {
         if (err) throw err;
 
@@ -22,4 +24,4 @@ function welcome (req, res) {
     res.send(`Server is running at http://localhost: ${ config.port }`);
 }
 
-module.exports = {setup,welcome}
+module.exports = {register,welcome}
