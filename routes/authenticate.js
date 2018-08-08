@@ -26,7 +26,7 @@ function authenticate(req, res) {
                     success: false,
                     message: 'Authentication failed. Wrong password.'
                 });
-            } else {
+            } else if(req.body.password && req.body.name){
 
                 // if user is found and password is right
                 // create a token
@@ -42,11 +42,16 @@ function authenticate(req, res) {
                     message: 'Got token!',
                     token: token
                 });
+            }else{
+                res.json({
+                    success: false,
+                    message: 'User name and password not found',
+                });
             }
-
         }
-
     });
 }
 
-module.exports = {authenticate}
+module.exports = {
+    authenticate
+}

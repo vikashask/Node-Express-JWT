@@ -28,7 +28,7 @@ const welcome = require('./routes/welcome');
 const auth = require('./routes/authenticate');
 const userRoute = require('./routes/userRoute');
 
-app.get('/setup', welcome.setup);
+app.post('/register', welcome.register);
 app.get('/', welcome.welcome);
 
 // api routes instance
