@@ -6,21 +6,20 @@
 	},
 	"item": [
 		{
-			"_postman_id": "7e5147ec-9953-4c4e-a52a-65648c0e784c",
+			"_postman_id": "ba39e2ab-66a2-49c7-ac2b-e612c8077c98",
 			"name": "http://localhost:3001/authenticate",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
-						"key": "name",
-						"value": "vikask"
-					},
-					{
-						"key": "password",
-						"value": "password"
+						"key": "Content-Type",
+						"value": "application/json"
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"vikask\",\n\t\"password\":\"12345678\"\n}"
+				},
 				"url": {
 					"raw": "http://localhost:3001/api/authenticate",
 					"protocol": "http",
@@ -38,7 +37,7 @@
 			"response": []
 		},
 		{
-			"_postman_id": "04cdc9fc-47f5-43ee-9146-cd2ce0ec1e55",
+			"_postman_id": "a014e834-d275-49ae-8a21-dd1a3cf7940d",
 			"name": "http://localhost:3001/users",
 			"request": {
 				"method": "GET",
@@ -65,7 +64,7 @@
 			"response": []
 		},
 		{
-			"_postman_id": "6c6758b0-e562-42ef-bd3e-793fcb918dbd",
+			"_postman_id": "1b47e83a-3ce2-4ae2-8444-71b42d9e3ff1",
 			"name": "http://localhost:3001/api/checkToken",
 			"request": {
 				"method": "GET",
@@ -92,7 +91,7 @@
 			"response": []
 		},
 		{
-			"_postman_id": "c4547065-07c5-435f-ab4d-e07dceba7497",
+			"_postman_id": "4fb2aead-73c7-48c1-bad2-c38c4dfc62f0",
 			"name": "http://localhost:3001/api",
 			"request": {
 				"method": "GET",
@@ -114,6 +113,54 @@
 						"api"
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "fb83ce85-6470-4749-a555-74cfc195cbcf",
+			"name": "http://localhost:3001/api/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"vikask\",\n\t\"password\":\"12345678\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "e9fdd2ae-25e5-4905-ae86-7559198d3272",
+			"name": "http://localhost:3001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001"
+				},
+				"description": "root"
 			},
 			"response": []
 		}
