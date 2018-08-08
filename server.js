@@ -26,11 +26,12 @@ app.use(morgan('dev'));
 // routes 
 const welcome = require('./routes/welcome');
 const auth = require('./routes/authenticate');
+const userRoute = require('./routes/userRoute');
 
 app.get('/setup', welcome.setup);
 app.get('/', welcome.welcome);
 
-// instance of the router for api routes
+// api routes instance
 var routesApi = express.Router();
 
 routesApi.post('/authenticate', auth.authenticate);
@@ -75,6 +76,9 @@ routesApi.get('/', function (req, res) {
 		message: 'Welcome to Api route'
 	});
 });
+
+routesApi.get('/users',userRoute.getAllUsers);
+
 
 app.use('/api',routesApi);
 // start the server 
