@@ -14,6 +14,6 @@
 ### import postman collection in postman and hit the api
 
 ### 
-
+![GitHub Logo](/demoImage/1 authenticate.PNG)
 
 
