@@ -14,6 +14,6 @@
 ### import postman collection in postman and hit the api
 
 ### 
-![GitHub Logo](/Node-Express-JWT/demoImage/1 authenticate.PNG)
+![GitHub Logo](https://github.com/vikashraj144/Node-Express-JWT/blob/master/demoImage/1%20authenticate.PNG)
 
 
