@@ -16,4 +16,10 @@
 ### 
 ![GitHub Logo](https://github.com/vikashraj144/Node-Express-JWT/blob/master/demoImage/1%20authenticate.PNG)
 
+![GitHub Logo](https://github.com/vikashraj144/Node-Express-JWT/blob/master/demoImage/2%20check%20api.PNG)
+
+![GitHub Logo](https://github.com/vikashraj144/Node-Express-JWT/blob/master/demoImage/3%20user%20list.PNG)
+
+![GitHub Logo](https://github.com/vikashraj144/Node-Express-JWT/blob/master/demoImage/4%20check%20token.PNG)
+
 
