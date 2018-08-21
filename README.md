@@ -13,12 +13,19 @@
 
 ### import postman collection in postman and hit the api
 
-### 
+### Authenticate
+
 ![GitHub Logo](https://github.com/vikashraj144/Node-Express-JWT/blob/master/demoImage/1%20authenticate.PNG)
+
+### Check Api
 
 ![GitHub Logo](https://github.com/vikashraj144/Node-Express-JWT/blob/master/demoImage/2%20check%20api.PNG)
 
+### User List
+
 ![GitHub Logo](https://github.com/vikashraj144/Node-Express-JWT/blob/master/demoImage/3%20user%20list.PNG)
+
+### Check token
 
 ![GitHub Logo](https://github.com/vikashraj144/Node-Express-JWT/blob/master/demoImage/4%20check%20token.PNG)
 
